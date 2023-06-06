@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dados</title>
+</head>
+<body>
+   <h3>Cadastro</h3>
+    <form method="POST">
+        {{ formulario.hidden_tag() }}
+        {{ formulario.nome.label}} {{ formulario.nome()}}
+        <br/>
+        {{ formulario.casado.label }} {{ formulario.casado() }}
+        <br/>
+        {{ formulario.sexo.label }} {{ formulario.sexo() }}
+        <br/>
+        {{ formulario.cor.label }} {{ formulario.cor() }}
+        <br/>
+        {{ formulario.comentario.label }} {{ formulario.comentario() }}
+         <br/>
+        {{ formulario.enviar() }}
+    </form>
+</body>
+</html>
